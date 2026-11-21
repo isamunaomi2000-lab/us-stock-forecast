@@ -1,0 +1,322 @@
+{
+  "generated_at_utc": "2026-11-21T13:37:15.679230+00:00",
+  "method": "common_period_v1_to_v5",
+  "by_ticker": {
+    "FCEL": {
+      "V1": {
+        "start_date": "2020-01-13",
+        "end_date": "2026-11-20",
+        "initial_capital_usd": 10000.0,
+        "ending_capital_usd": 1965.5,
+        "return_pct": -80.35,
+        "trade_count": 191,
+        "win_rate_pct": 42.41,
+        "daily_close_drawdown_pct": 99.09
+      },
+      "V2": {
+        "start_date": "2020-01-13",
+        "end_date": "2026-11-20",
+        "initial_capital_usd": 10000.0,
+        "ending_capital_usd": 1575.66,
+        "return_pct": -84.24,
+        "trade_count": 189,
+        "win_rate_pct": 43.92,
+        "daily_close_drawdown_pct": 99.52
+      },
+      "V3": {
+        "start_date": "2020-01-13",
+        "end_date": "2026-11-20",
+        "initial_capital_usd": 10000.0,
+        "ending_capital_usd": 934.08,
+        "return_pct": -90.66,
+        "trade_count": 191,
+        "win_rate_pct": 41.88,
+        "daily_close_drawdown_pct": 99.05
+      },
+      "V4": {
+        "start_date": "2020-01-13",
+        "end_date": "2026-11-20",
+        "initial_capital_usd": 10000.0,
+        "ending_capital_usd": 3451.62,
+        "return_pct": -65.48,
+        "trade_count": 283,
+        "win_rate_pct": 33.92,
+        "daily_close_drawdown_pct": 90.62
+      },
+      "V5": {
+        "start_date": "2020-01-13",
+        "end_date": "2026-11-20",
+        "initial_capital_usd": 10000.0,
+        "ending_capital_usd": 8357.71,
+        "return_pct": -16.42,
+        "trade_count": 105,
+        "win_rate_pct": 29.52,
+        "daily_close_drawdown_pct": 23.26
+      }
+    },
+    "APA": {
+      "V1": {
+        "start_date": "2017-05-24",
+        "end_date": "2026-11-20",
+        "initial_capital_usd": 10000.0,
+        "ending_capital_usd": 1920.96,
+        "return_pct": -80.79,
+        "trade_count": 317,
+        "win_rate_pct": 47.0,
+        "daily_close_drawdown_pct": 91.88
+      },
+      "V2": {
+        "start_date": "2017-05-24",
+        "end_date": "2026-11-20",
+        "initial_capital_usd": 10000.0,
+        "ending_capital_usd": 636.21,
+        "return_pct": -93.64,
+        "trade_count": 328,
+        "win_rate_pct": 46.34,
+        "daily_close_drawdown_pct": 97.58
+      },
+      "V3": {
+        "start_date": "2017-05-24",
+        "end_date": "2026-11-20",
+        "initial_capital_usd": 10000.0,
+        "ending_capital_usd": 1944.93,
+        "return_pct": -80.55,
+        "trade_count": 341,
+        "win_rate_pct": 46.63,
+        "daily_close_drawdown_pct": 92.91
+      },
+      "V4": {
+        "start_date": "2017-05-24",
+        "end_date": "2026-11-20",
+        "initial_capital_usd": 10000.0,
+        "ending_capital_usd": 4637.82,
+        "return_pct": -53.62,
+        "trade_count": 216,
+        "win_rate_pct": 35.65,
+        "daily_close_drawdown_pct": 71.69
+      },
+      "V5": {
+        "start_date": "2017-05-24",
+        "end_date": "2026-11-20",
+        "initial_capital_usd": 10000.0,
+        "ending_capital_usd": 9326.65,
+        "return_pct": -6.73,
+        "trade_count": 116,
+        "win_rate_pct": 35.34,
+        "daily_close_drawdown_pct": 15.94
+      }
+    },
+    "NCNA": {
+      "V1": {
+        "start_date": "2025-02-05",
+        "end_date": "2026-11-20",
+        "initial_capital_usd": 10000.0,
+        "ending_capital_usd": 484.75,
+        "return_pct": -95.15,
+        "trade_count": 14,
+        "win_rate_pct": 21.43,
+        "daily_close_drawdown_pct": 95.52
+      },
+      "V2": {
+        "start_date": "2025-02-05",
+        "end_date": "2026-11-20",
+        "initial_capital_usd": 10000.0,
+        "ending_capital_usd": 431.6,
+        "return_pct": -95.68,
+        "trade_count": 14,
+        "win_rate_pct": 14.29,
+        "daily_close_drawdown_pct": 96.01
+      },
+      "V3": {
+        "start_date": "2025-02-05",
+        "end_date": "2026-11-20",
+        "initial_capital_usd": 10000.0,
+        "ending_capital_usd": 190.72,
+        "return_pct": -98.09,
+        "trade_count": 17,
+        "win_rate_pct": 17.65,
+        "daily_close_drawdown_pct": 98.22
+      },
+      "V4": {
+        "start_date": "2025-02-05",
+        "end_date": "2026-11-20",
+        "initial_capital_usd": 10000.0,
+        "ending_capital_usd": 7137.03,
+        "return_pct": -28.63,
+        "trade_count": 17,
+        "win_rate_pct": 23.53,
+        "daily_close_drawdown_pct": 32.05
+      },
+      "V5": {
+        "start_date": "2025-02-05",
+        "end_date": "2026-11-20",
+        "initial_capital_usd": 10000.0,
+        "ending_capital_usd": 10000.0,
+        "return_pct": 0.0,
+        "trade_count": 0,
+        "win_rate_pct": null,
+        "daily_close_drawdown_pct": 0.0
+      }
+    },
+    "SPCX": {
+      "V1": {
+        "start_date": "2026-11-02",
+        "end_date": "2026-11-20",
+        "initial_capital_usd": 10000.0,
+        "ending_capital_usd": 9344.91,
+        "return_pct": -6.55,
+        "trade_count": 3,
+        "win_rate_pct": 33.33,
+        "daily_close_drawdown_pct": 12.52
+      },
+      "V2": {
+        "start_date": "2026-11-02",
+        "end_date": "2026-11-20",
+        "initial_capital_usd": 10000.0,
+        "ending_capital_usd": 10301.97,
+        "return_pct": 3.02,
+        "trade_count": 1,
+        "win_rate_pct": 100.0,
+        "daily_close_drawdown_pct": 12.52
+      },
+      "V3": {
+        "start_date": "2026-11-02",
+        "end_date": "2026-11-20",
+        "initial_capital_usd": 10000.0,
+        "ending_capital_usd": 10301.97,
+        "return_pct": 3.02,
+        "trade_count": 1,
+        "win_rate_pct": 100.0,
+        "daily_close_drawdown_pct": 12.52
+      },
+      "V4": {
+        "start_date": "2026-11-02",
+        "end_date": "2026-11-20",
+        "initial_capital_usd": 10000.0,
+        "ending_capital_usd": 10000.0,
+        "return_pct": 0.0,
+        "trade_count": 0,
+        "win_rate_pct": null,
+        "daily_close_drawdown_pct": 0
+      },
+      "V5": {
+        "status": "insufficient_200_day_history",
+        "start_date": "2026-11-02",
+        "end_date": "2026-11-20"
+      }
+    },
+    "NVDA": {
+      "V1": {
+        "start_date": "2021-05-07",
+        "end_date": "2026-11-20",
+        "initial_capital_usd": 10000.0,
+        "ending_capital_usd": 65551.68,
+        "return_pct": 555.52,
+        "trade_count": 255,
+        "win_rate_pct": 56.86,
+        "daily_close_drawdown_pct": 58.07
+      },
+      "V2": {
+        "start_date": "2021-05-07",
+        "end_date": "2026-11-20",
+        "initial_capital_usd": 10000.0,
+        "ending_capital_usd": 32358.18,
+        "return_pct": 223.58,
+        "trade_count": 256,
+        "win_rate_pct": 53.12,
+        "daily_close_drawdown_pct": 64.2
+      },
+      "V3": {
+        "start_date": "2021-05-07",
+        "end_date": "2026-11-20",
+        "initial_capital_usd": 10000.0,
+        "ending_capital_usd": 47415.32,
+        "return_pct": 374.15,
+        "trade_count": 259,
+        "win_rate_pct": 55.6,
+        "daily_close_drawdown_pct": 52.78
+      },
+      "V4": {
+        "start_date": "2021-05-07",
+        "end_date": "2026-11-20",
+        "initial_capital_usd": 10000.0,
+        "ending_capital_usd": 25115.16,
+        "return_pct": 151.15,
+        "trade_count": 129,
+        "win_rate_pct": 48.06,
+        "daily_close_drawdown_pct": 48.36
+      },
+      "V5": {
+        "start_date": "2021-05-07",
+        "end_date": "2026-11-20",
+        "initial_capital_usd": 10000.0,
+        "ending_capital_usd": 11181.5,
+        "return_pct": 11.81,
+        "trade_count": 100,
+        "win_rate_pct": 48.0,
+        "daily_close_drawdown_pct": 11.84
+      }
+    },
+    "MCHP": {
+      "V1": {
+        "start_date": "2020-03-06",
+        "end_date": "2026-11-20",
+        "initial_capital_usd": 10000.0,
+        "ending_capital_usd": 5234.71,
+        "return_pct": -47.65,
+        "trade_count": 246,
+        "win_rate_pct": 46.34,
+        "daily_close_drawdown_pct": 67.15
+      },
+      "V2": {
+        "start_date": "2020-03-06",
+        "end_date": "2026-11-20",
+        "initial_capital_usd": 10000.0,
+        "ending_capital_usd": 4368.8,
+        "return_pct": -56.31,
+        "trade_count": 245,
+        "win_rate_pct": 47.35,
+        "daily_close_drawdown_pct": 78.6
+      },
+      "V3": {
+        "start_date": "2020-03-06",
+        "end_date": "2026-11-20",
+        "initial_capital_usd": 10000.0,
+        "ending_capital_usd": 4132.42,
+        "return_pct": -58.68,
+        "trade_count": 251,
+        "win_rate_pct": 47.41,
+        "daily_close_drawdown_pct": 78.57
+      },
+      "V4": {
+        "start_date": "2020-03-06",
+        "end_date": "2026-11-20",
+        "initial_capital_usd": 10000.0,
+        "ending_capital_usd": 2540.54,
+        "return_pct": -74.59,
+        "trade_count": 113,
+        "win_rate_pct": 35.4,
+        "daily_close_drawdown_pct": 80.75
+      },
+      "V5": {
+        "start_date": "2020-03-06",
+        "end_date": "2026-11-20",
+        "initial_capital_usd": 10000.0,
+        "ending_capital_usd": 9120.91,
+        "return_pct": -8.79,
+        "trade_count": 75,
+        "win_rate_pct": 41.33,
+        "daily_close_drawdown_pct": 15.28
+      }
+    }
+  },
+  "notes": [
+    "Retrospective comparison, not independent validation.",
+    "V1-V4 results are reused from prior validation.",
+    "V5 is simulated on matching date ranges.",
+    "Daily drawdown uses closing equity only.",
+    "Different position sizing across models.",
+    "No taxes, FX costs, or market impact.",
+    "Historical adjusted prices approximate execution."
+  ]
+}
