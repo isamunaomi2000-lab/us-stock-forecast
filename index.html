@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>米国株 予測ダッシュボード</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: #f3f6fb;
+  color: #172033;
+  font-family: system-ui, sans-serif;
+  padding: 18px;
+}
+main { max-width: 850px; margin: auto; }
+h1 { font-size: 25px; }
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 18px;
+  margin: 14px 0;
+  box-shadow: 0 2px 8px #00000009;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+h2 { margin: 0 0 8px; font-size: 22px; }
+small, .muted { color: #64748b; }
+.price { font-size: 22px; font-weight: 700; }
+.up { color: #16803d; }
+.down { color: #c2410c; }
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 9px;
+}
+.tag {
+  display: inline-block;
+  background: #eaf1ff;
+  color: #1d4ed8;
+  border-radius: 8px;
+  padding: 4px 9px;
+  font-size: 12px;
+}
+.notice {
+  background: #fff7ed;
+  padding: 14px;
+  border-radius: 12px;
+  font-size: 13px;
+}
+@media (max-width: 520px) {
+  .grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+<main>
+<h1>米国株 予測ダッシュボード</h1>
+<p class="muted">保有株・スイング候補の5営業日先を試験予測</p>
+
+<div class="notice">
+  この予測は過去60営業日の値動きから計算した未検証モデルです。
+  売買推奨ではありません。
+</div>
+
+<p id="status">最新の予測データを読み込み中...</p>
+<div id="stocks" class="grid"></div>
+<p class="muted" id="updated"></p>
+</main>
+
+<script>
+function money(value) {
+  return "$" + Number(value).toFixed(2);
+}
+
+function percent(value) {
+  return (Number(value) * 100).toFixed(1) + "%";
+}
+
+function element(tag, className, text) {
+  const el = document.createElement(tag);
+  if (className) el.className = className;
+  if (text !== undefined) el.textContent = text;
+  return el;
+}
+
+async function load() {
+  const status = document.getElementById("status");
+  const container = document.getElementById("stocks");
+
+  try {
+    const response = await fetch(
+      "data/predictions/latest.json?v=" + Date.now(),
+      { cache: "no-store" }
+    );
+    if (!response.ok) throw new Error("データがありません");
+
+    const data = await response.json();
+    const forecasts = data.forecasts || [];
+
+    container.textContent = "";
+
+    for (const stock of forecasts) {
+      const card = element("section", "card");
+      const title = element("h2", "", stock.ticker);
+      const tag = element("span", "tag", "5営業日先");
+      const close = element(
+        "p", "muted",
+        "基準終値 " + money(stock.close)
+      );
+      const forecast = element(
+        "div", "price",
+        "予測 " + money(stock.forecast_5d)
+      );
+      const change =
+        Number(stock.forecast_5d) / Number(stock.close) - 1;
+
+      forecast.classList.add(change >= 0 ? "up" : "down");
+
+      const probability = element(
+        "p", "",
+        "上昇確率の試算 " + percent(stock.probability_up_5d)
+      );
+      const range = element(
+        "p", "muted",
+        "想定価格帯 " +
+        money(stock.range_low_5d) + " ～ " +
+        money(stock.range_high_5d)
+      );
+      const date = element(
+        "small", "",
+        "基準日 " + stock.as_of_date
+      );
+
+      card.append(title, tag, close, forecast, probability, range, date);
+      container.appendChild(card);
+    }
+
+    status.textContent =
+      forecasts.length + "銘柄の予測を表示しています";
+
+    document.getElementById("updated").textContent =
+      "最終計算（UTC）: " + data.generated_at_utc;
+  } catch (error) {
+    status.textContent =
+      "予測データを取得できません。自動実行と公開設定を確認してください。";
+  }
+}
+
+load();
+</script>
+</body>
+</html>
