@@ -52,6 +52,16 @@ small, .muted { color: #64748b; }
   border-radius: 12px;
   font-size: 13px;
 }
+.accuracy-button {
+  display: inline-block;
+  background: #2563eb;
+  color: white;
+  padding: 13px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 14px 0;
+}
 @media (max-width: 520px) {
   .grid { grid-template-columns: 1fr; }
 }
@@ -66,6 +76,10 @@ small, .muted { color: #64748b; }
   この予測は過去60営業日の値動きから計算した未検証モデルです。
   売買推奨ではありません。
 </div>
+
+<a href="./accuracy.html" class="accuracy-button">
+  📊 予測精度を見る
+</a>
 
 <p id="status">最新の予測データを読み込み中...</p>
 <div id="stocks" class="grid"></div>
