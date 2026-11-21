@@ -1,0 +1,264 @@
+{
+  "updated_at_utc": "2026-11-21T13:11:02.546707+00:00",
+  "method": "historical_three_model_comparison",
+  "horizon_trading_days": 5,
+  "by_ticker": {
+    "FCEL": {
+      "split_date": "2020-01-13",
+      "models": {
+        "V1": {
+          "earlier_period": {
+            "count": 6873,
+            "mean_absolute_error_pct": 8.157,
+            "direction_accuracy_pct": 46.81
+          },
+          "later_period": {
+            "count": 1720,
+            "mean_absolute_error_pct": 12.346,
+            "direction_accuracy_pct": 48.26
+          }
+        },
+        "V2": {
+          "earlier_period": {
+            "count": 6873,
+            "mean_absolute_error_pct": 8.22,
+            "direction_accuracy_pct": 47.39
+          },
+          "later_period": {
+            "count": 1720,
+            "mean_absolute_error_pct": 12.391,
+            "direction_accuracy_pct": 48.14
+          }
+        },
+        "V3": {
+          "earlier_period": {
+            "count": 6873,
+            "mean_absolute_error_pct": 8.144,
+            "direction_accuracy_pct": 46.98
+          },
+          "later_period": {
+            "count": 1720,
+            "mean_absolute_error_pct": 11.911,
+            "direction_accuracy_pct": 47.79
+          }
+        }
+      }
+    },
+    "APA": {
+      "split_date": "2017-05-24",
+      "models": {
+        "V1": {
+          "earlier_period": {
+            "count": 9526,
+            "mean_absolute_error_pct": 4.155,
+            "direction_accuracy_pct": 47.11
+          },
+          "later_period": {
+            "count": 2383,
+            "mean_absolute_error_pct": 6.549,
+            "direction_accuracy_pct": 49.01
+          }
+        },
+        "V2": {
+          "earlier_period": {
+            "count": 9526,
+            "mean_absolute_error_pct": 4.245,
+            "direction_accuracy_pct": 47.19
+          },
+          "later_period": {
+            "count": 2383,
+            "mean_absolute_error_pct": 6.624,
+            "direction_accuracy_pct": 48.8
+          }
+        },
+        "V3": {
+          "earlier_period": {
+            "count": 9526,
+            "mean_absolute_error_pct": 4.313,
+            "direction_accuracy_pct": 46.96
+          },
+          "later_period": {
+            "count": 2383,
+            "mean_absolute_error_pct": 6.619,
+            "direction_accuracy_pct": 48.51
+          }
+        }
+      }
+    },
+    "NCNA": {
+      "split_date": "2025-02-05",
+      "models": {
+        "V1": {
+          "earlier_period": {
+            "count": 1783,
+            "mean_absolute_error_pct": 10.646,
+            "direction_accuracy_pct": 49.86
+          },
+          "later_period": {
+            "count": 447,
+            "mean_absolute_error_pct": 25.692,
+            "direction_accuracy_pct": 60.18
+          }
+        },
+        "V2": {
+          "earlier_period": {
+            "count": 1783,
+            "mean_absolute_error_pct": 10.715,
+            "direction_accuracy_pct": 49.64
+          },
+          "later_period": {
+            "count": 447,
+            "mean_absolute_error_pct": 25.602,
+            "direction_accuracy_pct": 59.51
+          }
+        },
+        "V3": {
+          "earlier_period": {
+            "count": 1783,
+            "mean_absolute_error_pct": 10.57,
+            "direction_accuracy_pct": 48.18
+          },
+          "later_period": {
+            "count": 447,
+            "mean_absolute_error_pct": 26.201,
+            "direction_accuracy_pct": 56.15
+          }
+        }
+      }
+    },
+    "SPCX": {
+      "split_date": "2026-11-02",
+      "models": {
+        "V1": {
+          "earlier_period": {
+            "count": 33,
+            "mean_absolute_error_pct": 6.593,
+            "direction_accuracy_pct": 27.27
+          },
+          "later_period": {
+            "count": 10,
+            "mean_absolute_error_pct": 4.175,
+            "direction_accuracy_pct": 40.0
+          }
+        },
+        "V2": {
+          "earlier_period": {
+            "count": 33,
+            "mean_absolute_error_pct": 6.665,
+            "direction_accuracy_pct": 24.24
+          },
+          "later_period": {
+            "count": 10,
+            "mean_absolute_error_pct": 4.238,
+            "direction_accuracy_pct": 60.0
+          }
+        },
+        "V3": {
+          "earlier_period": {
+            "count": 33,
+            "mean_absolute_error_pct": 6.314,
+            "direction_accuracy_pct": 39.39
+          },
+          "later_period": {
+            "count": 10,
+            "mean_absolute_error_pct": 4.184,
+            "direction_accuracy_pct": 70.0
+          }
+        }
+      }
+    },
+    "NVDA": {
+      "split_date": "2021-05-07",
+      "models": {
+        "V1": {
+          "earlier_period": {
+            "count": 5544,
+            "mean_absolute_error_pct": 6.215,
+            "direction_accuracy_pct": 52.36
+          },
+          "later_period": {
+            "count": 1388,
+            "mean_absolute_error_pct": 5.534,
+            "direction_accuracy_pct": 55.33
+          }
+        },
+        "V2": {
+          "earlier_period": {
+            "count": 5544,
+            "mean_absolute_error_pct": 6.285,
+            "direction_accuracy_pct": 52.25
+          },
+          "later_period": {
+            "count": 1388,
+            "mean_absolute_error_pct": 5.63,
+            "direction_accuracy_pct": 55.12
+          }
+        },
+        "V3": {
+          "earlier_period": {
+            "count": 5544,
+            "mean_absolute_error_pct": 6.219,
+            "direction_accuracy_pct": 52.25
+          },
+          "later_period": {
+            "count": 1388,
+            "mean_absolute_error_pct": 5.614,
+            "direction_accuracy_pct": 54.68
+          }
+        }
+      }
+    },
+    "MCHP": {
+      "split_date": "2020-03-06",
+      "models": {
+        "V1": {
+          "earlier_period": {
+            "count": 6725,
+            "mean_absolute_error_pct": 4.612,
+            "direction_accuracy_pct": 50.39
+          },
+          "later_period": {
+            "count": 1683,
+            "mean_absolute_error_pct": 4.898,
+            "direction_accuracy_pct": 47.42
+          }
+        },
+        "V2": {
+          "earlier_period": {
+            "count": 6725,
+            "mean_absolute_error_pct": 4.709,
+            "direction_accuracy_pct": 49.86
+          },
+          "later_period": {
+            "count": 1683,
+            "mean_absolute_error_pct": 4.985,
+            "direction_accuracy_pct": 46.46
+          }
+        },
+        "V3": {
+          "earlier_period": {
+            "count": 6725,
+            "mean_absolute_error_pct": 4.777,
+            "direction_accuracy_pct": 50.33
+          },
+          "later_period": {
+            "count": 1683,
+            "mean_absolute_error_pct": 4.942,
+            "direction_accuracy_pct": 47.12
+          }
+        }
+      }
+    }
+  },
+  "notes": [
+    "V1, V2, and V3 use the same forecast dates.",
+    "Only information available on each forecast date is used.",
+    "The 80/20 split is descriptive, not model training.",
+    "V2 and V3 are experimental, with fixed parameters.",
+    "The later period has already informed model development.",
+    "Do not treat it as an untouched independent test.",
+    "Adjusted historical prices may be revised.",
+    "Overlapping five-day observations are dependent.",
+    "Transaction costs are not included."
+  ]
+}
