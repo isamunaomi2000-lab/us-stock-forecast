@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>米国株・予測精度</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  padding: 18px;
+  background: #f3f6fb;
+  color: #172033;
+  font-family: system-ui, sans-serif;
+}
+main { max-width: 850px; margin: auto; }
+h1 { font-size: 25px; }
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 18px;
+  margin: 14px 0;
+  box-shadow: 0 2px 8px #00000009;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 11px 7px;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+}
+th { font-size: 13px; }
+small { color: #64748b; }
+a { color: #2563eb; }
+.good { color: #16803d; }
+.bad { color: #c2410c; }
+.scroll { overflow-x: auto; }
+</style>
+</head>
+<body>
+<main>
+<a href="./index.html">← 株価予測に戻る</a>
+<h1>米国株・予測精度</h1>
+<p>5営業日先の予測と実際の株価を比較します。</p>
+
+<section class="card">
+  <h2>全体の評価状況</h2>
+  <div id="status">読み込み中...</div>
+</section>
+
+<section class="card">
+  <h2>銘柄別の予測成績</h2>
+  <div id="summary">読み込み中...</div>
+</section>
+
+<section class="card">
+  <h2>予測と実績の履歴</h2>
+  <div id="history">読み込み中...</div>
+</section>
+
+<small>
+予測は統計モデルによる試算です。
+実績が蓄積されるまでは精度を判断できません。
+投資成果を保証するものではありません。
+</small>
+</main>
+
+<script>
+const fmt = (value, digits = 2) =>
+  Number(value).toFixed(digits);
+
+async function load() {
+  try {
+    const response = await fetch(
+      "./data/evaluation/summary.json?t=" + Date.now()
+    );
+    if (!response.ok) throw new Error("データ取得失敗");
+
+    const data = await response.json();
+
+    document.getElementById("status").textContent =
+      "評価済み予測：" + data.total_evaluated + "件";
+
+    const summary = Object.entries(data.by_ticker || {});
+    const results = data.results || [];
+
+    if (!summary.length) {
+      document.getElementById("summary").textContent =
+        "実績待ち：5営業日後の株価が揃うと表示されます。";
+    } else {
+      document.getElementById("summary").innerHTML =
+        '<div class="scroll"><table>' +
+        '<tr><th>銘柄</th><th>件数</th>' +
+        '<th>平均誤差</th><th>方向的中率</th></tr>' +
+        summary.map(([ticker, item]) =>
+          '<tr><td>' + ticker + '</td><td>' +
+          item.evaluated_predictions + '</td><td>' +
+          fmt(item.mean_absolute_error_pct) + '%</td><td>' +
+          fmt(item.direction_accuracy_pct, 1) +
+          '%</td></tr>'
+        ).join("") + '</table></div>';
+    }
+
+    if (!results.length) {
+      document.getElementById("history").textContent =
+        "まだ評価できる予測がありません。";
+    } else {
+      document.getElementById("history").innerHTML =
+        '<div class="scroll"><table>' +
+        '<tr><th>銘柄</th><th>予測日</th>' +
+        '<th>実績日</th><th>予測価格</th>' +
+        '<th>実際価格</th><th>結果</th></tr>' +
+        results.slice().reverse().slice(0, 50).map(item =>
+          '<tr><td>' + item.ticker + '</td><td>' +
+          item.forecast_date + '</td><td>' +
+          item.target_date + '</td><td>$' +
+          fmt(item.predicted_price) + '</td><td>$' +
+          fmt(item.actual_price) + '</td><td class="' +
+          (item.direction_correct ? 'good' : 'bad') +
+          '">' + (item.direction_correct ? '的中' : '不的中') +
+          '</td></tr>'
+        ).join("") + '</table></div>';
+    }
+  } catch (error) {
+    document.getElementById("status").textContent =
+      "評価データを読み込めませんでした。";
+    document.getElementById("summary").textContent = "";
+    document.getElementById("history").textContent = "";
+  }
+}
+load();
+</script>
+</body>
+</html>
