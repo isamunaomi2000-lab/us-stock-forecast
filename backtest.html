@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>米国株・過去予測バックテスト</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  padding: 18px;
+  background: #f3f6fb;
+  color: #172033;
+  font-family: system-ui, sans-serif;
+}
+main { max-width: 900px; margin: auto; }
+h1 { font-size: 25px; }
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 18px;
+  margin: 14px 0;
+  box-shadow: 0 2px 8px #00000009;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+.big { font-size: 26px; font-weight: bold; }
+.muted { color: #64748b; font-size: 13px; }
+a { color: #2563eb; }
+table { width: 100%; border-collapse: collapse; }
+th, td {
+  text-align: left;
+  padding: 11px 8px;
+  border-bottom: 1px solid #e2e8f0;
+}
+th { font-size: 13px; }
+.scroll { overflow-x: auto; }
+.bar {
+  height: 12px;
+  background: #e2e8f0;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 8px;
+}
+.fill {
+  height: 100%;
+  background: #2563eb;
+}
+.notice {
+  background: #fff7ed;
+  padding: 14px;
+  border-radius: 12px;
+  font-size: 13px;
+}
+@media (max-width: 520px) {
+  .grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+<main>
+<a href="./index.html">← 米国株予測に戻る</a>
+<h1>米国株・過去予測バックテスト</h1>
+<p class="muted">
+過去の各営業日時点から5営業日先を予測した検証結果
+</p>
+
+<div class="notice">
+  過去の株価を使って予測を再現した結果です。
+  実際の運用成績ではありません。
+  方向的中率が高くても利益を保証するものではありません。
+</div>
+
+<div id="status" class="card">読み込み中...</div>
+
+<h2>銘柄別の方向的中率</h2>
+<div id="cards" class="grid"></div>
+
+<section class="card">
+  <h2>バックテスト比較表</h2>
+  <div id="table" class="scroll">読み込み中...</div>
+</section>
+
+<section class="card">
+  <h2>検証条件</h2>
+  <p>予測期間：5営業日先</p>
+  <p>予測方法：過去60営業日の平均対数リターン</p>
+  <p class="muted">
+    過去の調整後株価を使用しています。
+    株式分割などの影響や予測期間の重複があるため、
+    統計的な独立性は保証されません。
+  </p>
+</section>
+</main>
+
+<script>
+const fmt = (n, digits = 2) =>
+  Number(n).toFixed(digits);
+
+function el(tag, className, content) {
+  const node = document.createElement(tag);
+  if (className) node.className = className;
+  if (content !== undefined) node.textContent = content;
+  return node;
+}
+
+async function load() {
+  try {
+    const response = await fetch(
+      "./data/backtest/summary.json?t=" + Date.now(),
+      { cache: "no-store" }
+    );
+
+    if (!response.ok) throw new Error("データ取得失敗");
+
+    const data = await response.json();
+    const items = Object.entries(data.by_ticker || {})
+      .sort((a, b) =>
+        b[1].direction_accuracy_pct -
+        a[1].direction_accuracy_pct
+      );
+
+    document.getElementById("status").textContent =
+      "検証済み予測： " +
+      Number(data.total_evaluated).toLocaleString("ja-JP") +
+      " 件";
+
+    const cards = document.getElementById("cards");
+    cards.textContent = "";
+
+    for (const [ticker, item] of items) {
+      const card = el("section", "card");
+      card.appendChild(el("h2", "", ticker));
+      card.appendChild(
+        el("div", "big",
+          fmt(item.direction_accuracy_pct) + "%")
+      );
+      card.appendChild(
+        el("p", "muted", "上昇・下落の方向的中率")
+      );
+
+      const bar = el("div", "bar");
+      const fill = el("div", "fill");
+      fill.style.width = Math.max(
+        0, Math.min(100, item.direction_accuracy_pct)
+      ) + "%";
+      bar.appendChild(fill);
+      card.appendChild(bar);
+
+      card.appendChild(
+        el("p", "muted",
+          "平均価格誤差 " +
+          fmt(item.mean_absolute_error_pct) + "%")
+      );
+      card.appendChild(
+        el("p", "muted",
+          "検証件数 " +
+          item.evaluated_predictions.toLocaleString("ja-JP"))
+      );
+      cards.appendChild(card);
+    }
+
+    const table = document.createElement("table");
+    const header = document.createElement("tr");
+
+    for (const title of [
+      "銘柄", "方向的中率", "平均誤差", "件数", "検証開始"
+    ]) {
+      header.appendChild(el("th", "", title));
+    }
+    table.appendChild(header);
+
+    for (const [ticker, item] of items) {
+      const row = document.createElement("tr");
+      for (const value of [
+        ticker,
+        fmt(item.direction_accuracy_pct) + "%",
+        fmt(item.mean_absolute_error_pct) + "%",
+        item.evaluated_predictions.toLocaleString("ja-JP"),
+        item.first_forecast_date
+      ]) {
+        row.appendChild(el("td", "", value));
+      }
+      table.appendChild(row);
+    }
+
+    const tableArea = document.getElementById("table");
+    tableArea.textContent = "";
+    tableArea.appendChild(table);
+
+  } catch (error) {
+    document.getElementById("status").textContent =
+      "バックテスト結果を読み込めませんでした。";
+    document.getElementById("table").textContent =
+      "GitHub Actionsの実行結果を確認してください。";
+  }
+}
+load();
+</script>
+</body>
+</html>
