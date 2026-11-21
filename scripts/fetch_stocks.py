@@ -13,12 +13,12 @@ OUTPUT.mkdir(parents=True, exist_ok=True)
 summary = []
 
 for ticker in TICKERS:
-    print(f"Fetching {ticker}...")
+    print(f"Fetching all available history: {ticker}...")
 
     try:
         stock = yf.Ticker(ticker)
         history = stock.history(
-            period="2y",
+            period="max",
             interval="1d",
             auto_adjust=True
         )
@@ -56,9 +56,13 @@ for ticker in TICKERS:
             "close": round(float(latest["Close"]), 4),
             "volume": int(latest["Volume"]),
             "rows": len(history),
+            "first_date": history.index[0].strftime("%Y-%m-%d"),
         })
 
-        print(f"Saved {ticker}: {len(history)} rows")
+        print(
+            f"Saved {ticker}: {len(history)} rows "
+            f"from {history.index[0].date()}"
+        )
 
     except Exception as error:
         print(f"Error {ticker}: {error}")
