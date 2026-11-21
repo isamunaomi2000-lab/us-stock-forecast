@@ -1,0 +1,95 @@
+{
+  "generated_at_utc": "2026-11-21T13:18:03.988909+00:00",
+  "strategy": "experimental_sma20_sma50_v4",
+  "assumptions": {
+    "initial_capital_usd": 10000.0,
+    "take_profit_pct": 10.0,
+    "stop_loss_pct": 5.0,
+    "max_holding_sessions": 10,
+    "cost_per_side_pct": 0.1,
+    "long_only": true,
+    "next_open_entry": true
+  },
+  "by_ticker": {
+    "FCEL": {
+      "initial_capital_usd": 10000.0,
+      "ending_capital_usd": 473.9,
+      "total_return_pct": -95.26,
+      "buy_and_hold_return_pct": -99.89,
+      "trade_count": 563,
+      "win_rate_pct": 34.28,
+      "max_closed_trade_drawdown_pct": 98.06,
+      "first_price_date": "1992-06-25",
+      "last_price_date": "2026-11-20"
+    },
+    "APA": {
+      "initial_capital_usd": 10000.0,
+      "ending_capital_usd": 536.72,
+      "total_return_pct": -94.63,
+      "buy_and_hold_return_pct": 1963.27,
+      "trade_count": 651,
+      "win_rate_pct": 40.25,
+      "max_closed_trade_drawdown_pct": 97.68,
+      "first_price_date": "1979-05-15",
+      "last_price_date": "2026-11-20"
+    },
+    "NCNA": {
+      "initial_capital_usd": 10000.0,
+      "ending_capital_usd": 1157.98,
+      "total_return_pct": -88.42,
+      "buy_and_hold_return_pct": -100.0,
+      "trade_count": 110,
+      "win_rate_pct": 28.18,
+      "max_closed_trade_drawdown_pct": 89.87,
+      "first_price_date": "2017-09-28",
+      "last_price_date": "2026-11-20"
+    },
+    "SPCX": {
+      "initial_capital_usd": 10000.0,
+      "ending_capital_usd": 9873.86,
+      "total_return_pct": -1.26,
+      "buy_and_hold_return_pct": -6.87,
+      "trade_count": 5,
+      "win_rate_pct": 40.0,
+      "max_closed_trade_drawdown_pct": 10.11,
+      "first_price_date": "2026-06-12",
+      "last_price_date": "2026-11-20"
+    },
+    "NVDA": {
+      "initial_capital_usd": 10000.0,
+      "ending_capital_usd": 276559.36,
+      "total_return_pct": 2665.59,
+      "buy_and_hold_return_pct": 327855.67,
+      "trade_count": 514,
+      "win_rate_pct": 45.33,
+      "max_closed_trade_drawdown_pct": 62.2,
+      "first_price_date": "1999-01-22",
+      "last_price_date": "2026-11-20"
+    },
+    "MCHP": {
+      "initial_capital_usd": 10000.0,
+      "ending_capital_usd": 1127.77,
+      "total_return_pct": -88.72,
+      "buy_and_hold_return_pct": 20614.78,
+      "trade_count": 526,
+      "win_rate_pct": 41.06,
+      "max_closed_trade_drawdown_pct": 93.24,
+      "first_price_date": "1993-03-19",
+      "last_price_date": "2026-11-20"
+    }
+  },
+  "notes": [
+    "Historical simulation only.",
+    "Parameters have not been independently validated.",
+    "Signals use completed daily candles.",
+    "Entry occurs at next session open.",
+    "Stops and targets use daily OHLC approximation.",
+    "Stop is assumed first when both levels touch.",
+    "Gap fills use opening price.",
+    "No leverage or overlapping trades.",
+    "Full historical period, not independent test.",
+    "Drawdown uses closed-trade equity only.",
+    "No taxes, FX costs, or market impact.",
+    "Adjusted historical prices may be revised."
+  ]
+}
