@@ -1,0 +1,46 @@
+name: Compare Stock Prediction Models
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  compare:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Check stock data
+        run: |
+          ls -lh data/stocks/
+          ls -lh scripts/
+
+      - name: Run V1 vs V2 comparison
+        run: |
+          python scripts/compare_models.py
+
+      - name: Show comparison summary
+        run: |
+          python -m json.tool data/model_comparison/summary.json
+
+      - name: Commit comparison results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/model_comparison/
+          git add data/predictions_v2/
+          if ! git diff --cached --quiet; then
+            git commit -m "Update stock model comparison"
+            git push
+          else
+            echo "No changes to commit"
+          fi
