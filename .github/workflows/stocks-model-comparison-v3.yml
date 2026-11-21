@@ -1,0 +1,48 @@
+name: Compare V1 V2 V3 Stock Models
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  compare-three-models:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Check input files
+        run: |
+          ls -lh scripts/predict_stocks_v2.py
+          ls -lh scripts/predict_stocks_v3.py
+          ls -lh scripts/compare_models_v3.py
+          ls -lh data/stocks/
+
+      - name: Compare three models
+        run: |
+          python scripts/compare_models_v3.py
+
+      - name: Display comparison results
+        run: |
+          python -m json.tool data/model_comparison_v3/summary.json
+
+      - name: Commit comparison results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/model_comparison_v3/
+          if ! git diff --cached --quiet; then
+            git commit -m "Update V1 V2 V3 model comparison"
+            git push
+          else
+            echo "No changes to commit"
+          fi
