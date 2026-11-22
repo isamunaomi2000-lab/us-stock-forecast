@@ -5,7 +5,16 @@ from pathlib import Path
 
 import yfinance as yf
 
-TICKERS = ["FCEL", "APA", "NCNA", "SPCX", "NVDA", "MCHP"]
+# SPY is used as a broad US market trend indicator.
+TICKERS = [
+    "FCEL",
+    "APA",
+    "NCNA",
+    "SPCX",
+    "NVDA",
+    "MCHP",
+    "SPY",
+]
 
 OUTPUT = Path("data/stocks")
 OUTPUT.mkdir(parents=True, exist_ok=True)
