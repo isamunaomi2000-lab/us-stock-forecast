@@ -1,0 +1,39 @@
+name: V6.2 Market Regime Analysis
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Run V6.2 market analysis
+        run: python scripts/analyze_market_v62.py
+
+      - name: Display analysis results
+        run: python -m json.tool data/market_analysis_v62/summary.json
+
+      - name: Commit analysis results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/market_analysis_v62/
+          if ! git diff --cached --quiet; then
+            git commit -m "Update V6.2 market analysis"
+            git push
+          else
+            echo "No changes to commit"
+          fi
