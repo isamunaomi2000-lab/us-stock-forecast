@@ -1,0 +1,40 @@
+name: Stock Trading Validation V5-V6
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Run V5-V6 comparison
+        run: python scripts/validate_trading_v6.py
+
+      - name: Display comparison results
+        run: |
+          python -m json.tool data/trading_validation_v6/summary.json
+
+      - name: Save comparison results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/trading_validation_v6/
+          if ! git diff --cached --quiet; then
+            git commit -m "Update V5-V6 trading validation"
+            git push
+          else
+            echo "No changes to commit"
+          fi
