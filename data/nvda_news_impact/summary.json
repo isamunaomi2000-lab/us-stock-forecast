@@ -1,0 +1,220 @@
+{
+  "generated_at_utc": "2026-11-22T05:22:54.012370+00:00",
+  "ticker": "NVDA",
+  "event_count": 20,
+  "events": [
+    {
+      "published_at_utc": "2026-11-16T00:00:28+00:00",
+      "headline": "AI Day Seoul Brings Together Korea\u2019s Industry Leaders, Startups and Developer Communities",
+      "source": "NVIDIA Newsroom RSS",
+      "url": "https://blogs.nvidia.com/blog/ai-day-seoul-wrapup/",
+      "event_date_ny": "2026-11-15",
+      "first_session_date": "2026-11-16",
+      "first_session_change_pct": -4.12,
+      "five_session_change_pct": -22.92
+    },
+    {
+      "published_at_utc": "2026-11-16T16:00:00+00:00",
+      "headline": "NVIDIA Announces Collaboration With IBM and Fermi National Accelerator Laboratory to Launch Quantum-Classical Codesign Platform, Plus Error-Correction Breakthrough to Advance Practical Quantum Computing",
+      "source": "NVIDIA Newsroom RSS",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-collaboration-with-ibm-and-fermi-national-accelerator-laboratory-to-launch-quantum-classical-codesign-platform-plus-error-correction-breakthrough-to-advance-practical-quantum-computing",
+      "event_date_ny": "2026-11-16",
+      "first_session_date": "2026-11-17",
+      "first_session_change_pct": -0.44,
+      "five_session_change_pct": null
+    },
+    {
+      "published_at_utc": "2026-11-16T16:00:00+00:00",
+      "headline": "NVIDIA Expands Vera CPU Platform to Accelerate Scientific Discovery",
+      "source": "NVIDIA Newsroom RSS",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-expands-vera-cpu-platform-to-accelerate-scientific-discovery",
+      "event_date_ny": "2026-11-16",
+      "first_session_date": "2026-11-17",
+      "first_session_change_pct": -0.44,
+      "five_session_change_pct": null
+    },
+    {
+      "published_at_utc": "2026-11-16T16:00:00+00:00",
+      "headline": "NVIDIA Introduces Nemotron for Science to Accelerate Discoveries With Agents",
+      "source": "NVIDIA Newsroom RSS",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-introduces-nemotron-for-science-to-accelerate-discoveries-with-agents",
+      "event_date_ny": "2026-11-16",
+      "first_session_date": "2026-11-17",
+      "first_session_change_pct": -0.44,
+      "five_session_change_pct": null
+    },
+    {
+      "published_at_utc": "2026-11-16T16:00:01+00:00",
+      "headline": "NVIDIA Announces Rubin HPC \u2014 A New GPU to Accelerate Agents for Science, Engineering and Analytics",
+      "source": "NVIDIA Newsroom RSS",
+      "url": "https://blogs.nvidia.com/blog/rubin-hpc/",
+      "event_date_ny": "2026-11-16",
+      "first_session_date": "2026-11-17",
+      "first_session_change_pct": -0.44,
+      "five_session_change_pct": null
+    },
+    {
+      "published_at_utc": "2026-11-16T16:00:11+00:00",
+      "headline": "CUDA at 20: How the Platform Transformed Scientific Computing",
+      "source": "NVIDIA Newsroom RSS",
+      "url": "https://blogs.nvidia.com/blog/20-years-cuda/",
+      "event_date_ny": "2026-11-16",
+      "first_session_date": "2026-11-17",
+      "first_session_change_pct": -0.44,
+      "five_session_change_pct": null
+    },
+    {
+      "published_at_utc": "2026-11-16T16:00:16+00:00",
+      "headline": "NVIDIA CUDA-X Libraries Give Agents the Tools to Accelerate Scientific Discovery",
+      "source": "NVIDIA Newsroom RSS",
+      "url": "https://blogs.nvidia.com/blog/cuda-x-libraries-agents-accelerate-scientific-discovery/",
+      "event_date_ny": "2026-11-16",
+      "first_session_date": "2026-11-17",
+      "first_session_change_pct": -0.44,
+      "five_session_change_pct": null
+    },
+    {
+      "published_at_utc": "2026-11-16T16:00:25+00:00",
+      "headline": "NVIDIA Sweeps MLPerf Training and Endpoints as Vera Rubin Debuts With Leading Performance",
+      "source": "NVIDIA Newsroom RSS",
+      "url": "https://blogs.nvidia.com/blog/mlperf-training-endpoints-vera-rubin/",
+      "event_date_ny": "2026-11-16",
+      "first_session_date": "2026-11-17",
+      "first_session_change_pct": -0.44,
+      "five_session_change_pct": null
+    },
+    {
+      "published_at_utc": "2026-11-16T16:00:47+00:00",
+      "headline": "NVIDIA Expands Slurm to Bring Quantum Computing Into Supercomputing",
+      "source": "NVIDIA Newsroom RSS",
+      "url": "https://blogs.nvidia.com/blog/slurm-quantum-computing-supercomputing/",
+      "event_date_ny": "2026-11-16",
+      "first_session_date": "2026-11-17",
+      "first_session_change_pct": -0.44,
+      "five_session_change_pct": null
+    },
+    {
+      "published_at_utc": "2026-11-16T16:00:51+00:00",
+      "headline": "Lambda Boosts AI Factory Resiliency and Efficiency With NVIDIA Photonics",
+      "source": "NVIDIA Newsroom RSS",
+      "url": "https://blogs.nvidia.com/blog/lambda-photonics/",
+      "event_date_ny": "2026-11-16",
+      "first_session_date": "2026-11-17",
+      "first_session_change_pct": -0.44,
+      "five_session_change_pct": null
+    },
+    {
+      "published_at_utc": "2026-11-16T20:00:37+00:00",
+      "headline": "How the World\u2019s Most Advanced AI Infrastructure Supply Chain Invents the Future",
+      "source": "NVIDIA Newsroom RSS",
+      "url": "https://blogs.nvidia.com/blog/ai-infrastructure-supply-chain/",
+      "event_date_ny": "2026-11-16",
+      "first_session_date": "2026-11-17",
+      "first_session_change_pct": -0.44,
+      "five_session_change_pct": null
+    },
+    {
+      "published_at_utc": "2026-11-16T23:00:05+00:00",
+      "headline": "NVIDIA DGX Spark Developer Kit Turns a Desk Into a Supercomputing Lab",
+      "source": "NVIDIA Newsroom RSS",
+      "url": "https://blogs.nvidia.com/blog/dgx-spark-hpc-developer-kit-sc26/",
+      "event_date_ny": "2026-11-16",
+      "first_session_date": "2026-11-17",
+      "first_session_change_pct": -0.44,
+      "five_session_change_pct": null
+    },
+    {
+      "published_at_utc": "2026-11-17T10:00:00+00:00",
+      "headline": "NVIDIA Board of Directors Establishes National Security and Export Control Oversight Committee",
+      "source": "NVIDIA Newsroom RSS",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-board-of-directors-establishes-national-security-and-export-control-oversight-committee",
+      "event_date_ny": "2026-11-17",
+      "first_session_date": "2026-11-18",
+      "first_session_change_pct": -2.89,
+      "five_session_change_pct": null
+    },
+    {
+      "published_at_utc": "2026-11-17T14:00:10+00:00",
+      "headline": "Ian Buck Kicks Off NVIDIA\u2019s Week at SC26 as Science Enters the Age of Agents",
+      "source": "NVIDIA Newsroom RSS",
+      "url": "https://blogs.nvidia.com/blog/ian-buck-sc26/",
+      "event_date_ny": "2026-11-17",
+      "first_session_date": "2026-11-18",
+      "first_session_change_pct": -2.89,
+      "five_session_change_pct": null
+    },
+    {
+      "published_at_utc": "2026-11-17T21:20:00+00:00",
+      "headline": "NVIDIA Announces Financial Results for Third Quarter Fiscal 2027",
+      "source": "NVIDIA Newsroom RSS",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2027",
+      "event_date_ny": "2026-11-17",
+      "first_session_date": "2026-11-18",
+      "first_session_change_pct": -2.89,
+      "five_session_change_pct": null
+    },
+    {
+      "published_at_utc": "2026-11-17T22:18:00+00:00",
+      "headline": "NVIDIA Expands Commitments With Supply Chain Partners to Support AI Infrastructure Buildout",
+      "source": "NVIDIA Newsroom RSS",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-expands-commitments-with-supply-chain-partners-to-support-ai-infrastructure-buildout",
+      "event_date_ny": "2026-11-17",
+      "first_session_date": "2026-11-18",
+      "first_session_change_pct": -2.89,
+      "five_session_change_pct": null
+    },
+    {
+      "published_at_utc": "2026-11-18T14:00:31+00:00",
+      "headline": "NVIDIA RTX Spark Compact Desktops Out Now",
+      "source": "NVIDIA Newsroom RSS",
+      "url": "https://blogs.nvidia.com/blog/rtx-spark-desktop-local-ai-available-now/",
+      "event_date_ny": "2026-11-18",
+      "first_session_date": "2026-11-19",
+      "first_session_change_pct": -3.3,
+      "five_session_change_pct": null
+    },
+    {
+      "published_at_utc": "2026-11-19T14:00:12+00:00",
+      "headline": "Season\u2019s Streamings and Savings: Black Friday Deals Come to GeForce NOW",
+      "source": "NVIDIA Newsroom RSS",
+      "url": "https://blogs.nvidia.com/blog/geforce-now-thursday-black-friday-2026/",
+      "event_date_ny": "2026-11-19",
+      "first_session_date": "2026-11-20",
+      "first_session_change_pct": -14.01,
+      "five_session_change_pct": null
+    },
+    {
+      "published_at_utc": "2026-11-19T20:00:15+00:00",
+      "headline": "NVIDIA and Microsoft Expand Accelerated Computing From Azure to Windows PCs",
+      "source": "NVIDIA Newsroom RSS",
+      "url": "https://blogs.nvidia.com/blog/microsoft-ignite-accelerated-computing-azure-windows-pcs/",
+      "event_date_ny": "2026-11-19",
+      "first_session_date": "2026-11-20",
+      "first_session_change_pct": -14.01,
+      "five_session_change_pct": null
+    },
+    {
+      "published_at_utc": "2026-11-19T22:00:00+00:00",
+      "headline": "NVIDIA Announces Upcoming Event for Financial Community",
+      "source": "NVIDIA Newsroom RSS",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-upcoming-event-for-financial-community-6929322",
+      "event_date_ny": "2026-11-19",
+      "first_session_date": "2026-11-20",
+      "first_session_change_pct": -14.01,
+      "five_session_change_pct": null
+    }
+  ],
+  "notes": [
+    "Descriptive event study only.",
+    "All events are mapped to the next",
+    "trading session after the NY calendar date.",
+    "Same-day releases are not assigned",
+    "to the same trading session.",
+    "Returns are not adjusted for SPY.",
+    "Overlapping events share return windows.",
+    "News association does not prove causality.",
+    "No intraday price reaction is measured.",
+    "Five-session result requires five",
+    "available sessions including first."
+  ]
+}
