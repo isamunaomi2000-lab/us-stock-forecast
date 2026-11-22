@@ -1,0 +1,485 @@
+{
+  "generated_at_utc": "2026-11-22T02:11:32.914732+00:00",
+  "strategy": "v62_market_regime_diagnostics",
+  "period": "last_20_percent_of_ticker_history",
+  "volatility_high_threshold_pct": 25,
+  "by_ticker": {
+    "FCEL": {
+      "start_date": "2019-12-31",
+      "end_date": "2026-11-20",
+      "v6_return_pct": 1.96,
+      "v6_max_drawdown_pct": 0.0,
+      "total_trades": 1,
+      "classified_trades": 1,
+      "unclassified_trades": 0,
+      "by_market_condition": {
+        "above_sma200": {
+          "true": {
+            "trades": 1,
+            "pnl_usd": 195.8,
+            "win_rate_pct": 100.0,
+            "average_pnl_usd": 195.8
+          },
+          "false": {
+            "trades": 0,
+            "pnl_usd": 0,
+            "win_rate_pct": null,
+            "average_pnl_usd": null
+          }
+        },
+        "sma50_above_sma200": {
+          "true": {
+            "trades": 1,
+            "pnl_usd": 195.8,
+            "win_rate_pct": 100.0,
+            "average_pnl_usd": 195.8
+          },
+          "false": {
+            "trades": 0,
+            "pnl_usd": 0,
+            "win_rate_pct": null,
+            "average_pnl_usd": null
+          }
+        },
+        "momentum20_positive": {
+          "true": {
+            "trades": 1,
+            "pnl_usd": 195.8,
+            "win_rate_pct": 100.0,
+            "average_pnl_usd": 195.8
+          },
+          "false": {
+            "trades": 0,
+            "pnl_usd": 0,
+            "win_rate_pct": null,
+            "average_pnl_usd": null
+          }
+        },
+        "volatility20_high": {
+          "true": {
+            "trades": 0,
+            "pnl_usd": 0,
+            "win_rate_pct": null,
+            "average_pnl_usd": null
+          },
+          "false": {
+            "trades": 1,
+            "pnl_usd": 195.8,
+            "win_rate_pct": 100.0,
+            "average_pnl_usd": 195.8
+          }
+        }
+      },
+      "by_entry_year": {
+        "2026": {
+          "trades": 1,
+          "pnl_usd": 195.8,
+          "win_rate_pct": 100.0,
+          "average_pnl_usd": 195.8
+        }
+      }
+    },
+    "APA": {
+      "start_date": "2017-05-12",
+      "end_date": "2026-11-20",
+      "v6_return_pct": 3.66,
+      "v6_max_drawdown_pct": 3.83,
+      "total_trades": 31,
+      "classified_trades": 31,
+      "unclassified_trades": 0,
+      "by_market_condition": {
+        "above_sma200": {
+          "true": {
+            "trades": 26,
+            "pnl_usd": 377.65,
+            "win_rate_pct": 46.15,
+            "average_pnl_usd": 14.53
+          },
+          "false": {
+            "trades": 5,
+            "pnl_usd": -11.27,
+            "win_rate_pct": 40.0,
+            "average_pnl_usd": -2.25
+          }
+        },
+        "sma50_above_sma200": {
+          "true": {
+            "trades": 28,
+            "pnl_usd": 531.59,
+            "win_rate_pct": 46.43,
+            "average_pnl_usd": 18.99
+          },
+          "false": {
+            "trades": 3,
+            "pnl_usd": -165.21,
+            "win_rate_pct": 33.33,
+            "average_pnl_usd": -55.07
+          }
+        },
+        "momentum20_positive": {
+          "true": {
+            "trades": 17,
+            "pnl_usd": 253.38,
+            "win_rate_pct": 52.94,
+            "average_pnl_usd": 14.9
+          },
+          "false": {
+            "trades": 14,
+            "pnl_usd": 113.0,
+            "win_rate_pct": 35.71,
+            "average_pnl_usd": 8.07
+          }
+        },
+        "volatility20_high": {
+          "true": {
+            "trades": 1,
+            "pnl_usd": 82.32,
+            "win_rate_pct": 100.0,
+            "average_pnl_usd": 82.32
+          },
+          "false": {
+            "trades": 30,
+            "pnl_usd": 284.06,
+            "win_rate_pct": 43.33,
+            "average_pnl_usd": 9.47
+          }
+        }
+      },
+      "by_entry_year": {
+        "2018": {
+          "trades": 5,
+          "pnl_usd": 10.65,
+          "win_rate_pct": 60.0,
+          "average_pnl_usd": 2.13
+        },
+        "2021": {
+          "trades": 8,
+          "pnl_usd": 182.26,
+          "win_rate_pct": 37.5,
+          "average_pnl_usd": 22.78
+        },
+        "2022": {
+          "trades": 5,
+          "pnl_usd": -11.27,
+          "win_rate_pct": 40.0,
+          "average_pnl_usd": -2.25
+        },
+        "2023": {
+          "trades": 1,
+          "pnl_usd": -105.79,
+          "win_rate_pct": 0.0,
+          "average_pnl_usd": -105.79
+        },
+        "2025": {
+          "trades": 2,
+          "pnl_usd": 163.05,
+          "win_rate_pct": 100.0,
+          "average_pnl_usd": 81.53
+        },
+        "2026": {
+          "trades": 10,
+          "pnl_usd": 127.48,
+          "win_rate_pct": 40.0,
+          "average_pnl_usd": 12.75
+        }
+      }
+    },
+    "NCNA": {
+      "start_date": "2025-01-24",
+      "end_date": "2026-11-20",
+      "v6_return_pct": 0.0,
+      "v6_max_drawdown_pct": 0.0,
+      "total_trades": 0,
+      "classified_trades": 0,
+      "unclassified_trades": 0,
+      "by_market_condition": {
+        "above_sma200": {
+          "true": {
+            "trades": 0,
+            "pnl_usd": 0,
+            "win_rate_pct": null,
+            "average_pnl_usd": null
+          },
+          "false": {
+            "trades": 0,
+            "pnl_usd": 0,
+            "win_rate_pct": null,
+            "average_pnl_usd": null
+          }
+        },
+        "sma50_above_sma200": {
+          "true": {
+            "trades": 0,
+            "pnl_usd": 0,
+            "win_rate_pct": null,
+            "average_pnl_usd": null
+          },
+          "false": {
+            "trades": 0,
+            "pnl_usd": 0,
+            "win_rate_pct": null,
+            "average_pnl_usd": null
+          }
+        },
+        "momentum20_positive": {
+          "true": {
+            "trades": 0,
+            "pnl_usd": 0,
+            "win_rate_pct": null,
+            "average_pnl_usd": null
+          },
+          "false": {
+            "trades": 0,
+            "pnl_usd": 0,
+            "win_rate_pct": null,
+            "average_pnl_usd": null
+          }
+        },
+        "volatility20_high": {
+          "true": {
+            "trades": 0,
+            "pnl_usd": 0,
+            "win_rate_pct": null,
+            "average_pnl_usd": null
+          },
+          "false": {
+            "trades": 0,
+            "pnl_usd": 0,
+            "win_rate_pct": null,
+            "average_pnl_usd": null
+          }
+        }
+      },
+      "by_entry_year": {}
+    },
+    "SPCX": {
+      "status": "insufficient_history",
+      "rows": 113
+    },
+    "NVDA": {
+      "start_date": "2021-04-27",
+      "end_date": "2026-11-20",
+      "v6_return_pct": 5.27,
+      "v6_max_drawdown_pct": 6.1,
+      "total_trades": 26,
+      "classified_trades": 26,
+      "unclassified_trades": 0,
+      "by_market_condition": {
+        "above_sma200": {
+          "true": {
+            "trades": 26,
+            "pnl_usd": 526.76,
+            "win_rate_pct": 42.31,
+            "average_pnl_usd": 20.26
+          },
+          "false": {
+            "trades": 0,
+            "pnl_usd": 0,
+            "win_rate_pct": null,
+            "average_pnl_usd": null
+          }
+        },
+        "sma50_above_sma200": {
+          "true": {
+            "trades": 25,
+            "pnl_usd": 631.38,
+            "win_rate_pct": 44.0,
+            "average_pnl_usd": 25.26
+          },
+          "false": {
+            "trades": 1,
+            "pnl_usd": -104.62,
+            "win_rate_pct": 0.0,
+            "average_pnl_usd": -104.62
+          }
+        },
+        "momentum20_positive": {
+          "true": {
+            "trades": 17,
+            "pnl_usd": 295.32,
+            "win_rate_pct": 47.06,
+            "average_pnl_usd": 17.37
+          },
+          "false": {
+            "trades": 9,
+            "pnl_usd": 231.44,
+            "win_rate_pct": 33.33,
+            "average_pnl_usd": 25.72
+          }
+        },
+        "volatility20_high": {
+          "true": {
+            "trades": 0,
+            "pnl_usd": 0,
+            "win_rate_pct": null,
+            "average_pnl_usd": null
+          },
+          "false": {
+            "trades": 26,
+            "pnl_usd": 526.76,
+            "win_rate_pct": 42.31,
+            "average_pnl_usd": 20.26
+          }
+        }
+      },
+      "by_entry_year": {
+        "2021": {
+          "trades": 2,
+          "pnl_usd": 69.01,
+          "win_rate_pct": 50.0,
+          "average_pnl_usd": 34.5
+        },
+        "2022": {
+          "trades": 1,
+          "pnl_usd": -104.62,
+          "win_rate_pct": 0.0,
+          "average_pnl_usd": -104.62
+        },
+        "2023": {
+          "trades": 8,
+          "pnl_usd": 408.37,
+          "win_rate_pct": 50.0,
+          "average_pnl_usd": 51.05
+        },
+        "2024": {
+          "trades": 6,
+          "pnl_usd": 606.53,
+          "win_rate_pct": 66.67,
+          "average_pnl_usd": 101.09
+        },
+        "2025": {
+          "trades": 3,
+          "pnl_usd": -166.39,
+          "win_rate_pct": 33.33,
+          "average_pnl_usd": -55.46
+        },
+        "2026": {
+          "trades": 6,
+          "pnl_usd": -286.14,
+          "win_rate_pct": 16.67,
+          "average_pnl_usd": -47.69
+        }
+      }
+    },
+    "MCHP": {
+      "start_date": "2020-02-25",
+      "end_date": "2026-11-20",
+      "v6_return_pct": 5.5,
+      "v6_max_drawdown_pct": 2.36,
+      "total_trades": 26,
+      "classified_trades": 26,
+      "unclassified_trades": 0,
+      "by_market_condition": {
+        "above_sma200": {
+          "true": {
+            "trades": 25,
+            "pnl_usd": 276.42,
+            "win_rate_pct": 44.0,
+            "average_pnl_usd": 11.06
+          },
+          "false": {
+            "trades": 1,
+            "pnl_usd": 273.82,
+            "win_rate_pct": 100.0,
+            "average_pnl_usd": 273.82
+          }
+        },
+        "sma50_above_sma200": {
+          "true": {
+            "trades": 23,
+            "pnl_usd": 180.71,
+            "win_rate_pct": 43.48,
+            "average_pnl_usd": 7.86
+          },
+          "false": {
+            "trades": 3,
+            "pnl_usd": 369.53,
+            "win_rate_pct": 66.67,
+            "average_pnl_usd": 123.18
+          }
+        },
+        "momentum20_positive": {
+          "true": {
+            "trades": 24,
+            "pnl_usd": 653.41,
+            "win_rate_pct": 45.83,
+            "average_pnl_usd": 27.23
+          },
+          "false": {
+            "trades": 2,
+            "pnl_usd": -103.17,
+            "win_rate_pct": 50.0,
+            "average_pnl_usd": -51.59
+          }
+        },
+        "volatility20_high": {
+          "true": {
+            "trades": 1,
+            "pnl_usd": -106.75,
+            "win_rate_pct": 0.0,
+            "average_pnl_usd": -106.75
+          },
+          "false": {
+            "trades": 25,
+            "pnl_usd": 656.99,
+            "win_rate_pct": 48.0,
+            "average_pnl_usd": 26.28
+          }
+        }
+      },
+      "by_entry_year": {
+        "2020": {
+          "trades": 5,
+          "pnl_usd": 513.57,
+          "win_rate_pct": 60.0,
+          "average_pnl_usd": 102.71
+        },
+        "2021": {
+          "trades": 6,
+          "pnl_usd": 8.95,
+          "win_rate_pct": 50.0,
+          "average_pnl_usd": 1.49
+        },
+        "2022": {
+          "trades": 1,
+          "pnl_usd": -109.33,
+          "win_rate_pct": 0.0,
+          "average_pnl_usd": -109.33
+        },
+        "2023": {
+          "trades": 6,
+          "pnl_usd": 98.92,
+          "win_rate_pct": 50.0,
+          "average_pnl_usd": 16.49
+        },
+        "2024": {
+          "trades": 3,
+          "pnl_usd": -40.16,
+          "win_rate_pct": 33.33,
+          "average_pnl_usd": -13.39
+        },
+        "2025": {
+          "trades": 2,
+          "pnl_usd": 94.11,
+          "win_rate_pct": 50.0,
+          "average_pnl_usd": 47.05
+        },
+        "2026": {
+          "trades": 3,
+          "pnl_usd": -15.82,
+          "win_rate_pct": 33.33,
+          "average_pnl_usd": -5.27
+        }
+      }
+    }
+  },
+  "notes": [
+    "Diagnostic analysis, not a trading strategy.",
+    "Uses original V6 trades without modification.",
+    "Market state uses only SPY history before entry.",
+    "Trade PnL is grouped by entry-date conditions.",
+    "Results are descriptive, not causal.",
+    "The 25 percent volatility threshold is exploratory.",
+    "No independent holdout validation."
+  ]
+}
