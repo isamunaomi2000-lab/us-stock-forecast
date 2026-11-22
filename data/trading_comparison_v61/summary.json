@@ -1,0 +1,151 @@
+{
+  "generated_at_utc": "2026-11-22T02:08:43.835368+00:00",
+  "strategy": "v6_vs_v61_spy_trend",
+  "market_filter": "SPY previous completed close > SPY previous 200-session SMA",
+  "test_fraction": 0.2,
+  "by_ticker": {
+    "FCEL": {
+      "start_date": "2019-12-31",
+      "end_date": "2026-11-20",
+      "v6": {
+        "initial_capital_usd": 10000.0,
+        "ending_capital_usd": 10195.8,
+        "total_return_pct": 1.96,
+        "trade_count": 1,
+        "win_rate_pct": 100.0,
+        "max_daily_close_drawdown_pct": 0.0,
+        "first_price_date": "2019-03-18",
+        "last_price_date": "2026-11-20"
+      },
+      "v61": {
+        "initial_capital_usd": 10000.0,
+        "ending_capital_usd": 10195.8,
+        "total_return_pct": 1.96,
+        "trade_count": 1,
+        "win_rate_pct": 100.0,
+        "max_daily_close_drawdown_pct": 0.0,
+        "first_price_date": "2019-03-18",
+        "last_price_date": "2026-11-20"
+      },
+      "return_difference_pp": 0.0,
+      "drawdown_difference_pp": 0.0
+    },
+    "APA": {
+      "start_date": "2017-05-12",
+      "end_date": "2026-11-20",
+      "v6": {
+        "initial_capital_usd": 10000.0,
+        "ending_capital_usd": 10366.37,
+        "total_return_pct": 3.66,
+        "trade_count": 31,
+        "win_rate_pct": 45.16,
+        "max_daily_close_drawdown_pct": 3.83,
+        "first_price_date": "2016-07-27",
+        "last_price_date": "2026-11-20"
+      },
+      "v61": {
+        "initial_capital_usd": 10000.0,
+        "ending_capital_usd": 10377.86,
+        "total_return_pct": 3.78,
+        "trade_count": 26,
+        "win_rate_pct": 46.15,
+        "max_daily_close_drawdown_pct": 3.07,
+        "first_price_date": "2016-07-27",
+        "last_price_date": "2026-11-20"
+      },
+      "return_difference_pp": 0.12,
+      "drawdown_difference_pp": -0.76
+    },
+    "NCNA": {
+      "start_date": "2025-01-24",
+      "end_date": "2026-11-20",
+      "v6": {
+        "initial_capital_usd": 10000.0,
+        "ending_capital_usd": 10000.0,
+        "total_return_pct": 0.0,
+        "trade_count": 0,
+        "win_rate_pct": null,
+        "max_daily_close_drawdown_pct": 0.0,
+        "first_price_date": "2024-04-08",
+        "last_price_date": "2026-11-20"
+      },
+      "v61": {
+        "initial_capital_usd": 10000.0,
+        "ending_capital_usd": 10000.0,
+        "total_return_pct": 0.0,
+        "trade_count": 0,
+        "win_rate_pct": null,
+        "max_daily_close_drawdown_pct": 0.0,
+        "first_price_date": "2024-04-08",
+        "last_price_date": "2026-11-20"
+      },
+      "return_difference_pp": 0.0,
+      "drawdown_difference_pp": 0.0
+    },
+    "SPCX": {
+      "status": "insufficient_history",
+      "available_rows": 113
+    },
+    "NVDA": {
+      "start_date": "2021-04-27",
+      "end_date": "2026-11-20",
+      "v6": {
+        "initial_capital_usd": 10000.0,
+        "ending_capital_usd": 10526.77,
+        "total_return_pct": 5.27,
+        "trade_count": 26,
+        "win_rate_pct": 42.31,
+        "max_daily_close_drawdown_pct": 6.1,
+        "first_price_date": "2020-07-10",
+        "last_price_date": "2026-11-20"
+      },
+      "v61": {
+        "initial_capital_usd": 10000.0,
+        "ending_capital_usd": 10526.77,
+        "total_return_pct": 5.27,
+        "trade_count": 26,
+        "win_rate_pct": 42.31,
+        "max_daily_close_drawdown_pct": 6.1,
+        "first_price_date": "2020-07-10",
+        "last_price_date": "2026-11-20"
+      },
+      "return_difference_pp": 0.0,
+      "drawdown_difference_pp": 0.0
+    },
+    "MCHP": {
+      "start_date": "2020-02-25",
+      "end_date": "2026-11-20",
+      "v6": {
+        "initial_capital_usd": 10000.0,
+        "ending_capital_usd": 10550.26,
+        "total_return_pct": 5.5,
+        "trade_count": 26,
+        "win_rate_pct": 46.15,
+        "max_daily_close_drawdown_pct": 2.36,
+        "first_price_date": "2019-05-09",
+        "last_price_date": "2026-11-20"
+      },
+      "v61": {
+        "initial_capital_usd": 10000.0,
+        "ending_capital_usd": 10470.14,
+        "total_return_pct": 4.7,
+        "trade_count": 26,
+        "win_rate_pct": 46.15,
+        "max_daily_close_drawdown_pct": 2.36,
+        "first_price_date": "2019-05-09",
+        "last_price_date": "2026-11-20"
+      },
+      "return_difference_pp": -0.8,
+      "drawdown_difference_pp": 0.0
+    }
+  },
+  "notes": [
+    "Historical comparison, not live signals.",
+    "Both strategies use the same V6 execution.",
+    "Last 20 percent of each ticker's history.",
+    "200 prior ticker sessions for warm-up.",
+    "SPY filter uses dates strictly before entry.",
+    "This is not independent holdout validation.",
+    "Daily OHLC execution is approximate."
+  ]
+}
