@@ -1,0 +1,39 @@
+name: NVDA Market Regime Analysis
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Analyze NVDA market regimes
+        run: python scripts/analyze_nvda_market_regimes.py
+
+      - name: Display results
+        run: python -m json.tool data/nvda_market_regimes/summary.json
+
+      - name: Commit results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/nvda_market_regimes/
+          if ! git diff --cached --quiet; then
+            git commit -m "Update NVDA market regime analysis"
+            git push
+          else
+            echo "No changes to commit"
+          fi
