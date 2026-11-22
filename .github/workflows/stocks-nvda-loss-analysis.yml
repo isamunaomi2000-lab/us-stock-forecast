@@ -1,0 +1,39 @@
+name: NVDA Loss Analysis
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Run NVDA loss analysis
+        run: python scripts/analyze_nvda_losses.py
+
+      - name: Display analysis results
+        run: python -m json.tool data/nvda_loss_analysis/summary.json
+
+      - name: Commit analysis results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/nvda_loss_analysis/
+          if ! git diff --cached --quiet; then
+            git commit -m "Update NVDA loss analysis"
+            git push
+          else
+            echo "No changes to commit"
+          fi
