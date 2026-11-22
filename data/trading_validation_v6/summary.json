@@ -1,0 +1,139 @@
+{
+  "generated_at_utc": "2026-11-22T01:55:06.625911+00:00",
+  "method": "last_20_percent_v5_v6",
+  "by_ticker": {
+    "FCEL": {
+      "start_date": "2019-12-31",
+      "end_date": "2026-11-20",
+      "V5": {
+        "initial_capital_usd": 10000.0,
+        "ending_capital_usd": 7722.42,
+        "total_return_pct": -22.78,
+        "trade_count": 112,
+        "win_rate_pct": 27.68,
+        "max_daily_close_drawdown_pct": 24.71,
+        "first_price_date": "2019-03-18",
+        "last_price_date": "2026-11-20"
+      },
+      "V6": {
+        "initial_capital_usd": 10000.0,
+        "ending_capital_usd": 10195.8,
+        "total_return_pct": 1.96,
+        "trade_count": 1,
+        "win_rate_pct": 100.0,
+        "max_daily_close_drawdown_pct": 0.0,
+        "first_price_date": "2019-03-18",
+        "last_price_date": "2026-11-20"
+      }
+    },
+    "APA": {
+      "start_date": "2017-05-12",
+      "end_date": "2026-11-20",
+      "V5": {
+        "initial_capital_usd": 10000.0,
+        "ending_capital_usd": 9326.65,
+        "total_return_pct": -6.73,
+        "trade_count": 116,
+        "win_rate_pct": 35.34,
+        "max_daily_close_drawdown_pct": 15.94,
+        "first_price_date": "2016-07-27",
+        "last_price_date": "2026-11-20"
+      },
+      "V6": {
+        "initial_capital_usd": 10000.0,
+        "ending_capital_usd": 10366.37,
+        "total_return_pct": 3.66,
+        "trade_count": 31,
+        "win_rate_pct": 45.16,
+        "max_daily_close_drawdown_pct": 3.83,
+        "first_price_date": "2016-07-27",
+        "last_price_date": "2026-11-20"
+      }
+    },
+    "NCNA": {
+      "start_date": "2025-01-24",
+      "end_date": "2026-11-20",
+      "V5": {
+        "initial_capital_usd": 10000.0,
+        "ending_capital_usd": 10000.0,
+        "total_return_pct": 0.0,
+        "trade_count": 0,
+        "win_rate_pct": null,
+        "max_daily_close_drawdown_pct": 0.0,
+        "first_price_date": "2024-04-08",
+        "last_price_date": "2026-11-20"
+      },
+      "V6": {
+        "initial_capital_usd": 10000.0,
+        "ending_capital_usd": 10000.0,
+        "total_return_pct": 0.0,
+        "trade_count": 0,
+        "win_rate_pct": null,
+        "max_daily_close_drawdown_pct": 0.0,
+        "first_price_date": "2024-04-08",
+        "last_price_date": "2026-11-20"
+      }
+    },
+    "SPCX": {
+      "status": "insufficient_history",
+      "price_rows": 113
+    },
+    "NVDA": {
+      "start_date": "2021-04-27",
+      "end_date": "2026-11-20",
+      "V5": {
+        "initial_capital_usd": 10000.0,
+        "ending_capital_usd": 11065.32,
+        "total_return_pct": 10.65,
+        "trade_count": 101,
+        "win_rate_pct": 47.52,
+        "max_daily_close_drawdown_pct": 11.84,
+        "first_price_date": "2020-07-10",
+        "last_price_date": "2026-11-20"
+      },
+      "V6": {
+        "initial_capital_usd": 10000.0,
+        "ending_capital_usd": 10526.77,
+        "total_return_pct": 5.27,
+        "trade_count": 26,
+        "win_rate_pct": 42.31,
+        "max_daily_close_drawdown_pct": 6.1,
+        "first_price_date": "2020-07-10",
+        "last_price_date": "2026-11-20"
+      }
+    },
+    "MCHP": {
+      "start_date": "2020-02-25",
+      "end_date": "2026-11-20",
+      "V5": {
+        "initial_capital_usd": 10000.0,
+        "ending_capital_usd": 9120.91,
+        "total_return_pct": -8.79,
+        "trade_count": 75,
+        "win_rate_pct": 41.33,
+        "max_daily_close_drawdown_pct": 15.28,
+        "first_price_date": "2019-05-09",
+        "last_price_date": "2026-11-20"
+      },
+      "V6": {
+        "initial_capital_usd": 10000.0,
+        "ending_capital_usd": 10550.27,
+        "total_return_pct": 5.5,
+        "trade_count": 26,
+        "win_rate_pct": 46.15,
+        "max_daily_close_drawdown_pct": 2.36,
+        "first_price_date": "2019-05-09",
+        "last_price_date": "2026-11-20"
+      }
+    }
+  },
+  "notes": [
+    "Retrospective comparison only.",
+    "Not an independent unseen-data test.",
+    "Same comparison dates and capital.",
+    "Same stop, target, fees and allocation.",
+    "Signals use completed previous sessions.",
+    "Daily OHLC approximates execution.",
+    "No taxes, FX costs or market impact."
+  ]
+}
