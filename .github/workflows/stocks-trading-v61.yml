@@ -1,0 +1,39 @@
+name: V6 vs V6.1 Trading Comparison
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  compare:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Run V6 vs V6.1 comparison
+        run: python scripts/compare_trading_v61.py
+
+      - name: Display comparison results
+        run: python -m json.tool data/trading_comparison_v61/summary.json
+
+      - name: Commit comparison results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/trading_comparison_v61/
+          if ! git diff --cached --quiet; then
+            git commit -m "Update V6 vs V6.1 comparison"
+            git push
+          else
+            echo "No changes to commit"
+          fi
