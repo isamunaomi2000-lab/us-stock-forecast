@@ -1,0 +1,120 @@
+{
+  "generated_at_utc": "2026-11-22T02:29:28.048449+00:00",
+  "ticker": "NVDA",
+  "method": "expanding_window_annual_reselection",
+  "training_start": "2021-01-01",
+  "test_years": {
+    "2023": {
+      "selected_threshold_pct": 32.5,
+      "training": {
+        "return_pct": 1.75,
+        "max_drawdown_pct": 0.28,
+        "trades": 1,
+        "win_rate_pct": 100.0,
+        "blocked_signal_days": 7
+      },
+      "test": {
+        "return_pct": 0.58,
+        "max_drawdown_pct": 1.23,
+        "trades": 1,
+        "win_rate_pct": 100.0,
+        "blocked_signal_days": 10
+      },
+      "baseline_v6": {
+        "return_pct": 4.25,
+        "max_drawdown_pct": 3.41,
+        "trades": 9,
+        "win_rate_pct": 55.56,
+        "blocked_signal_days": 0
+      },
+      "test_return_difference_points": -3.67
+    },
+    "2024": {
+      "selected_threshold_pct": 35.0,
+      "training": {
+        "return_pct": 8.65,
+        "max_drawdown_pct": 1.37,
+        "trades": 4,
+        "win_rate_pct": 100.0,
+        "blocked_signal_days": 13
+      },
+      "test": {
+        "return_pct": 2.09,
+        "max_drawdown_pct": 0.12,
+        "trades": 1,
+        "win_rate_pct": 100.0,
+        "blocked_signal_days": 6
+      },
+      "baseline_v6": {
+        "return_pct": 5.85,
+        "max_drawdown_pct": 2.07,
+        "trades": 6,
+        "win_rate_pct": 66.67,
+        "blocked_signal_days": 0
+      },
+      "test_return_difference_points": -3.76
+    },
+    "2025": {
+      "selected_threshold_pct": 35.0,
+      "training": {
+        "return_pct": 10.92,
+        "max_drawdown_pct": 1.37,
+        "trades": 5,
+        "win_rate_pct": 100.0,
+        "blocked_signal_days": 19
+      },
+      "test": {
+        "return_pct": -0.48,
+        "max_drawdown_pct": 1.36,
+        "trades": 2,
+        "win_rate_pct": 50.0,
+        "blocked_signal_days": 2
+      },
+      "baseline_v6": {
+        "return_pct": -1.52,
+        "max_drawdown_pct": 2.39,
+        "trades": 3,
+        "win_rate_pct": 33.33,
+        "blocked_signal_days": 0
+      },
+      "test_return_difference_points": 1.04
+    },
+    "2026": {
+      "selected_threshold_pct": 35.0,
+      "training": {
+        "return_pct": 10.38,
+        "max_drawdown_pct": 1.37,
+        "trades": 7,
+        "win_rate_pct": 85.71,
+        "blocked_signal_days": 21
+      },
+      "test": {
+        "return_pct": 0.45,
+        "max_drawdown_pct": 1.53,
+        "trades": 3,
+        "win_rate_pct": 33.33,
+        "blocked_signal_days": 3
+      },
+      "baseline_v6": {
+        "return_pct": -2.65,
+        "max_drawdown_pct": 3.51,
+        "trades": 6,
+        "win_rate_pct": 16.67,
+        "blocked_signal_days": 0
+      },
+      "test_return_difference_points": 3.1
+    }
+  },
+  "notes": [
+    "Thresholds were already explored using data",
+    "through 2026; this is a retrospective replay.",
+    "This is NOT an untouched out-of-sample test.",
+    "Each year is simulated with independent",
+    "initial capital and reset portfolio state.",
+    "Training selects highest total return.",
+    "No minimum trade count is imposed.",
+    "Indicators use prior completed sessions.",
+    "Daily OHLC execution remains approximate.",
+    "No taxes, FX costs or market impact."
+  ]
+}
