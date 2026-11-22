@@ -1,0 +1,80 @@
+{
+  "generated_at_utc": "2026-11-22T01:48:55.446613+00:00",
+  "strategy": "experimental_v6_filtered",
+  "assumptions": {
+    "initial_capital_usd": 10000.0,
+    "max_allocation_pct": 20,
+    "risk_per_trade_pct": 1,
+    "stop_loss_pct": 5,
+    "take_profit_pct": 10,
+    "max_holding_sessions": 10,
+    "cost_per_side_pct": 0.1,
+    "rsi_range": [
+      45,
+      70
+    ],
+    "minimum_20_session_momentum_pct": 3,
+    "minimum_volume_multiple": 1.2,
+    "maximum_annualized_volatility_pct": 80
+  },
+  "by_ticker": {
+    "FCEL": {
+      "initial_capital_usd": 10000.0,
+      "ending_capital_usd": 12127.14,
+      "total_return_pct": 21.27,
+      "trade_count": 71,
+      "win_rate_pct": 43.66,
+      "max_daily_close_drawdown_pct": 5.86,
+      "first_price_date": "1992-06-25",
+      "last_price_date": "2026-11-20"
+    },
+    "APA": {
+      "initial_capital_usd": 10000.0,
+      "ending_capital_usd": 10313.27,
+      "total_return_pct": 3.13,
+      "trade_count": 210,
+      "win_rate_pct": 44.29,
+      "max_daily_close_drawdown_pct": 19.81,
+      "first_price_date": "1979-05-15",
+      "last_price_date": "2026-11-20"
+    },
+    "NCNA": {
+      "initial_capital_usd": 10000.0,
+      "ending_capital_usd": 10191.72,
+      "total_return_pct": 1.92,
+      "trade_count": 2,
+      "win_rate_pct": 50.0,
+      "max_daily_close_drawdown_pct": 1.69,
+      "first_price_date": "2017-09-28",
+      "last_price_date": "2026-11-20"
+    },
+    "NVDA": {
+      "initial_capital_usd": 10000.0,
+      "ending_capital_usd": 12757.25,
+      "total_return_pct": 27.57,
+      "trade_count": 130,
+      "win_rate_pct": 46.92,
+      "max_daily_close_drawdown_pct": 6.84,
+      "first_price_date": "1999-01-22",
+      "last_price_date": "2026-11-20"
+    },
+    "MCHP": {
+      "initial_capital_usd": 10000.0,
+      "ending_capital_usd": 8110.35,
+      "total_return_pct": -18.9,
+      "trade_count": 166,
+      "win_rate_pct": 40.96,
+      "max_daily_close_drawdown_pct": 28.83,
+      "first_price_date": "1993-03-19",
+      "last_price_date": "2026-11-20"
+    }
+  },
+  "notes": [
+    "Experimental historical simulation only.",
+    "No independent holdout validation.",
+    "No future data used in entry signals.",
+    "Daily OHLC approximates stop and target fills.",
+    "One percent risk is a target, not a guarantee.",
+    "No taxes, FX fees, or market impact."
+  ]
+}
