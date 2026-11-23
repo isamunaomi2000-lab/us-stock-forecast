@@ -1,60 +1,60 @@
 {
-  "updated_at_utc": "2026-11-22T02:06:23.933440+00:00",
+  "updated_at_utc": "2026-11-23T23:24:48.481069+00:00",
   "stocks": [
     {
       "ticker": "FCEL",
-      "date": "2026-11-20",
-      "close": 6.69,
-      "volume": 6706700,
-      "rows": 8663,
+      "date": "2026-11-23",
+      "close": 7.78,
+      "volume": 9103686,
+      "rows": 8664,
       "first_date": "1992-06-25"
     },
     {
       "ticker": "APA",
-      "date": "2026-11-20",
-      "close": 45.03,
-      "volume": 4915300,
-      "rows": 11979,
+      "date": "2026-11-23",
+      "close": 44.06,
+      "volume": 6028449,
+      "rows": 11980,
       "first_date": "1979-05-15"
     },
     {
       "ticker": "NCNA",
-      "date": "2026-11-20",
+      "date": "2026-11-23",
       "close": 0.75,
-      "volume": 25500,
-      "rows": 2300,
+      "volume": 28315,
+      "rows": 2301,
       "first_date": "2017-09-28"
     },
     {
       "ticker": "SPCX",
-      "date": "2026-11-20",
-      "close": 127.79,
-      "volume": 124025300,
-      "rows": 113,
+      "date": "2026-11-23",
+      "close": 133.35,
+      "volume": 95396741,
+      "rows": 114,
       "first_date": "2026-06-12"
     },
     {
       "ticker": "NVDA",
-      "date": "2026-11-20",
-      "close": 125.53,
-      "volume": 626373200,
-      "rows": 7002,
+      "date": "2026-11-23",
+      "close": 165.05,
+      "volume": 776225888,
+      "rows": 7003,
       "first_date": "1999-01-22"
     },
     {
       "ticker": "MCHP",
-      "date": "2026-11-20",
-      "close": 55.44,
-      "volume": 33710100,
-      "rows": 8478,
+      "date": "2026-11-23",
+      "close": 61.22,
+      "volume": 23615062,
+      "rows": 8479,
       "first_date": "1993-03-19"
     },
     {
       "ticker": "SPY",
-      "date": "2026-11-20",
-      "close": 689.81,
-      "volume": 151049800,
-      "rows": 8512,
+      "date": "2026-11-23",
+      "close": 722.29,
+      "volume": 87055065,
+      "rows": 8513,
       "first_date": "1993-01-29"
     }
   ]
