@@ -1,0 +1,66 @@
+{
+  "generated_at_utc": "2026-11-25T23:39:18.955520+00:00",
+  "horizon_trading_days": 5,
+  "forecasts": [
+    {
+      "ticker": "FCEL",
+      "as_of_date": "2026-11-25",
+      "close": 7.44,
+      "forecast_5d": 6.9422,
+      "range_low_5d": 5.2687,
+      "range_high_5d": 9.1473,
+      "probability_up_5d": 0.3398,
+      "method": "60d_log_return_baseline"
+    },
+    {
+      "ticker": "APA",
+      "as_of_date": "2026-11-25",
+      "close": 45.48,
+      "forecast_5d": 45.5989,
+      "range_low_5d": 41.4523,
+      "range_high_5d": 50.1604,
+      "probability_up_5d": 0.518,
+      "method": "60d_log_return_baseline"
+    },
+    {
+      "ticker": "NCNA",
+      "as_of_date": "2026-11-25",
+      "close": 0.7721,
+      "forecast_5d": 0.7356,
+      "range_low_5d": 0.6297,
+      "range_high_5d": 0.8593,
+      "probability_up_5d": 0.3043,
+      "method": "60d_log_return_baseline"
+    },
+    {
+      "ticker": "SPCX",
+      "as_of_date": "2026-11-25",
+      "close": 127.44,
+      "forecast_5d": 126.2792,
+      "range_low_5d": 109.5263,
+      "range_high_5d": 145.5946,
+      "probability_up_5d": 0.4579,
+      "method": "60d_log_return_baseline"
+    },
+    {
+      "ticker": "NVDA",
+      "as_of_date": "2026-11-25",
+      "close": 149.3,
+      "forecast_5d": 144.7084,
+      "range_low_5d": 121.2056,
+      "range_high_5d": 172.7685,
+      "probability_up_5d": 0.3859,
+      "method": "60d_log_return_baseline"
+    },
+    {
+      "ticker": "MCHP",
+      "as_of_date": "2026-11-25",
+      "close": 57.655,
+      "forecast_5d": 56.675,
+      "range_low_5d": 49.1589,
+      "range_high_5d": 65.3404,
+      "probability_up_5d": 0.4214,
+      "method": "60d_log_return_baseline"
+    }
+  ]
+}
