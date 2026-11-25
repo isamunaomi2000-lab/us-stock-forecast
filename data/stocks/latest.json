@@ -1,60 +1,60 @@
 {
-  "updated_at_utc": "2026-11-24T23:23:10.172202+00:00",
+  "updated_at_utc": "2026-11-25T23:22:42.952224+00:00",
   "stocks": [
     {
       "ticker": "FCEL",
-      "date": "2026-11-24",
-      "close": 7.1,
-      "volume": 5057341,
-      "rows": 8665,
+      "date": "2026-11-25",
+      "close": 7.44,
+      "volume": 5733367,
+      "rows": 8666,
       "first_date": "1992-06-25"
     },
     {
       "ticker": "APA",
-      "date": "2026-11-24",
-      "close": 44.91,
-      "volume": 5403800,
-      "rows": 11981,
+      "date": "2026-11-25",
+      "close": 45.48,
+      "volume": 3816639,
+      "rows": 11982,
       "first_date": "1979-05-15"
     },
     {
       "ticker": "NCNA",
-      "date": "2026-11-24",
-      "close": 0.7589,
-      "volume": 21399,
-      "rows": 2302,
+      "date": "2026-11-25",
+      "close": 0.7721,
+      "volume": 21408,
+      "rows": 2303,
       "first_date": "2017-09-28"
     },
     {
       "ticker": "SPCX",
-      "date": "2026-11-24",
-      "close": 125.81,
-      "volume": 103186106,
-      "rows": 115,
+      "date": "2026-11-25",
+      "close": 127.44,
+      "volume": 146929059,
+      "rows": 116,
       "first_date": "2026-06-12"
     },
     {
       "ticker": "NVDA",
-      "date": "2026-11-24",
-      "close": 155.38,
-      "volume": 382058256,
-      "rows": 7004,
+      "date": "2026-11-25",
+      "close": 149.3,
+      "volume": 359527027,
+      "rows": 7005,
       "first_date": "1999-01-22"
     },
     {
       "ticker": "MCHP",
-      "date": "2026-11-24",
-      "close": 56.36,
-      "volume": 19595820,
-      "rows": 8480,
+      "date": "2026-11-25",
+      "close": 57.655,
+      "volume": 14835282,
+      "rows": 8481,
       "first_date": "1993-03-19"
     },
     {
       "ticker": "SPY",
-      "date": "2026-11-24",
-      "close": 718.78,
-      "volume": 63350573,
-      "rows": 8514,
+      "date": "2026-11-25",
+      "close": 716.7,
+      "volume": 72380475,
+      "rows": 8515,
       "first_date": "1993-01-29"
     }
   ]
