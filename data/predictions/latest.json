@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-11-25T23:39:18.955520+00:00",
+  "generated_at_utc": "2026-11-26T23:42:53.284962+00:00",
   "horizon_trading_days": 5,
   "forecasts": [
     {
@@ -25,11 +25,11 @@
     {
       "ticker": "NCNA",
       "as_of_date": "2026-11-25",
-      "close": 0.7721,
-      "forecast_5d": 0.7356,
-      "range_low_5d": 0.6297,
-      "range_high_5d": 0.8593,
-      "probability_up_5d": 0.3043,
+      "close": 0.772,
+      "forecast_5d": 0.7355,
+      "range_low_5d": 0.6296,
+      "range_high_5d": 0.8592,
+      "probability_up_5d": 0.3042,
       "method": "60d_log_return_baseline"
     },
     {
@@ -55,11 +55,11 @@
     {
       "ticker": "MCHP",
       "as_of_date": "2026-11-25",
-      "close": 57.655,
-      "forecast_5d": 56.675,
-      "range_low_5d": 49.1589,
-      "range_high_5d": 65.3404,
-      "probability_up_5d": 0.4214,
+      "close": 57.66,
+      "forecast_5d": 56.6804,
+      "range_low_5d": 49.1633,
+      "range_high_5d": 65.3468,
+      "probability_up_5d": 0.4215,
       "method": "60d_log_return_baseline"
     }
   ]
