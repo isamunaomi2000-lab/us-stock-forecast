@@ -1,60 +1,60 @@
 {
-  "updated_at_utc": "2026-11-26T23:27:48.661820+00:00",
+  "updated_at_utc": "2026-11-27T23:25:11.925641+00:00",
   "stocks": [
     {
       "ticker": "FCEL",
-      "date": "2026-11-25",
-      "close": 7.44,
-      "volume": 5774100,
-      "rows": 8666,
+      "date": "2026-11-27",
+      "close": 8.0,
+      "volume": 3255714,
+      "rows": 8667,
       "first_date": "1992-06-25"
     },
     {
       "ticker": "APA",
-      "date": "2026-11-25",
-      "close": 45.48,
-      "volume": 3816700,
-      "rows": 11982,
+      "date": "2026-11-27",
+      "close": 46.1,
+      "volume": 1868246,
+      "rows": 11983,
       "first_date": "1979-05-15"
     },
     {
       "ticker": "NCNA",
-      "date": "2026-11-25",
-      "close": 0.772,
-      "volume": 21900,
-      "rows": 2303,
+      "date": "2026-11-27",
+      "close": 0.8189,
+      "volume": 44484,
+      "rows": 2304,
       "first_date": "2017-09-28"
     },
     {
       "ticker": "SPCX",
-      "date": "2026-11-25",
-      "close": 127.44,
-      "volume": 148279900,
-      "rows": 116,
+      "date": "2026-11-27",
+      "close": 133.59,
+      "volume": 51364369,
+      "rows": 117,
       "first_date": "2026-06-12"
     },
     {
       "ticker": "NVDA",
-      "date": "2026-11-25",
-      "close": 149.3,
-      "volume": 366571900,
-      "rows": 7005,
+      "date": "2026-11-27",
+      "close": 150.49,
+      "volume": 185759641,
+      "rows": 7006,
       "first_date": "1999-01-22"
     },
     {
       "ticker": "MCHP",
-      "date": "2026-11-25",
-      "close": 57.66,
-      "volume": 14835600,
-      "rows": 8481,
+      "date": "2026-11-27",
+      "close": 60.37,
+      "volume": 10292996,
+      "rows": 8482,
       "first_date": "1993-03-19"
     },
     {
       "ticker": "SPY",
-      "date": "2026-11-25",
-      "close": 716.7,
-      "volume": 73112800,
-      "rows": 8515,
+      "date": "2026-11-27",
+      "close": 728.32,
+      "volume": 40442229,
+      "rows": 8516,
       "first_date": "1993-01-29"
     }
   ]
